@@ -43,10 +43,9 @@ export default function Biography() {
               Minha jornada na fotografia começou há um ano, mas minhas
               habilidades e dedicação incansável o levaram a mostrar as emoções
               através da arte. Seu portfólio diversificado abrange desde fotos
-              urbanas até retratos que capturam a essência das pessoas. Diego
-              busca constantemente aprimorar suas habilidades e aprender com
-              cada disparo, demonstrando um compromisso com a evolução
-              constante.
+              urbanas até retratos que capturam a essência das pessoas. Busco
+              constantemente aprimorar suas habilidades e aprender com cada
+              disparo, demonstrando um compromisso com a evolução constante.
             </p>
 
             <p>
