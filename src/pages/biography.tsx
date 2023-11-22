@@ -73,7 +73,12 @@ export default function Biography() {
         </BoxContent>
       </Container>
 
-      <Bio src={bio} alt="Foto de perfil Diego Santiago" quality={100} />
+      <Bio
+        src={bio}
+        alt="Foto de perfil Diego Santiago"
+        quality={100}
+        priority
+      />
     </PageWrapper>
   )
 }
