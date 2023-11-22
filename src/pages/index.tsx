@@ -38,7 +38,7 @@ export default function Home() {
               <Bolder>Edição:</Bolder> Diego Santiago
             </Text>
           </div>
-          <Text style="italic">
+          <Text style="italic" size={{ '@bp1': 'sm' }}>
             Fotos para extrair do mundo um{' '}
             <Bolder style="italic">ângulo</Bolder> diferente!
           </Text>

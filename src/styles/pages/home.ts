@@ -48,6 +48,11 @@ export const Text = styled('p', {
   fontWeight: '300',
 
   variants: {
+    size: {
+      sm: {
+        fontSize: '$md',
+      },
+    },
     style: {
       italic: {
         fontWeight: '200',

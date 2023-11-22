@@ -44,7 +44,9 @@ export function Menu() {
                   <Link href="/">Home</Link>
                 </List>
                 <List>
-                  <Link href="/galery">Agenda</Link>
+                  <a href="https://api.whatsapp.com/send/?phone=5585996834619&text=Ol%C3%A1,%20Desejo%20saber%20mais%20sobre%20seu%20trabalho&type=phone_number&app_absent=0">
+                    Agenda
+                  </a>
                 </List>
                 <List>
                   <Link href="/biography">Biografia</Link>
