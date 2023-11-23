@@ -13,7 +13,7 @@ export default function Galery() {
       <Header />
 
       <Box size={{ '@bp3': 'md' }}>
-        <Sectores href="/galery/sector/manipulation">
+        <Sectores href="/galery/sector/manipulation" prefetch>
           <Image
             quality={100}
             src={manipulation}

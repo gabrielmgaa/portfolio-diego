@@ -5,7 +5,13 @@ import { Container } from '@/styles/pages/home'
 
 import street from '../../../assets/galery/street.png'
 
-import { Banner, BoxImages, Section } from '@/styles/pages/sector'
+import {
+  Back,
+  Banner,
+  BoxImages,
+  Content,
+  Section,
+} from '@/styles/pages/sector'
 
 import {
   ball,
@@ -38,14 +44,18 @@ export default function Street() {
     <Container>
       <Header />
 
-      <Section size={{ '@bp2': 'column' }}>
-        <Banner src={street} alt="" size={{ '@bp2': 'column' }} />
+      <Section>
+        <Back href="/galery">Voltar</Back>
 
-        <BoxImages>
-          {images.map((image) => (
-            <Image src={image.url} key={image.id} alt="" />
-          ))}
-        </BoxImages>
+        <Content size={{ '@bp2': 'column' }}>
+          <Banner src={street} alt="" size={{ '@bp2': 'column' }} />
+
+          <BoxImages>
+            {images.map((image) => (
+              <Image src={image.url} key={image.id} alt="" />
+            ))}
+          </BoxImages>
+        </Content>
       </Section>
     </Container>
   )

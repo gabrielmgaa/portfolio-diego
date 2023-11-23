@@ -15,7 +15,13 @@ import {
   yan,
 } from '@/assets/galery/session/index'
 
-import { Banner, BoxImages, Section } from '@/styles/pages/sector'
+import {
+  Banner,
+  BoxImages,
+  Section,
+  Content,
+  Back,
+} from '@/styles/pages/sector'
 
 const images = [
   { id: 1, url: casal },
@@ -32,14 +38,17 @@ export default function Manipulation() {
     <Container>
       <Header />
 
-      <Section size={{ '@bp2': 'column' }}>
-        <Banner src={session} alt="" size={{ '@bp2': 'column' }} priority />
+      <Section>
+        <Back href="/galery">Voltar</Back>
+        <Content size={{ '@bp2': 'column' }}>
+          <Banner src={session} alt="" size={{ '@bp2': 'column' }} priority />
 
-        <BoxImages>
-          {images.map((image) => (
-            <Image src={image.url} key={image.id} alt="" />
-          ))}
-        </BoxImages>
+          <BoxImages>
+            {images.map((image) => (
+              <Image src={image.url} key={image.id} alt="" />
+            ))}
+          </BoxImages>
+        </Content>
       </Section>
     </Container>
   )

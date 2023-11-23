@@ -16,7 +16,14 @@ import {
   yogurt,
 } from '@/assets/galery/manipulation/index'
 
-import { Banner, BoxImages, Section } from '@/styles/pages/sector'
+import {
+  Back,
+  Banner,
+  BoxImages,
+  Content,
+  Section,
+} from '@/styles/pages/sector'
+import { ArrowLeft } from '@phosphor-icons/react/dist/ssr'
 
 const images = [
   { id: 1, url: barbie },
@@ -34,19 +41,26 @@ export default function Manipulation() {
     <Container>
       <Header />
 
-      <Section size={{ '@bp2': 'column' }}>
-        <Banner
-          src={manipulation}
-          alt=""
-          size={{ '@bp2': 'column' }}
-          priority
-        />
+      <Section>
+        <Back href="/galery">
+          <ArrowLeft />
+          Voltar
+        </Back>
 
-        <BoxImages>
-          {images.map((image) => (
-            <Image src={image.url} key={image.id} alt="" />
-          ))}
-        </BoxImages>
+        <Content size={{ '@bp2': 'column' }}>
+          <Banner
+            src={manipulation}
+            alt=""
+            size={{ '@bp2': 'column' }}
+            priority
+          />
+
+          <BoxImages>
+            {images.map((image) => (
+              <Image src={image.url} key={image.id} alt="" />
+            ))}
+          </BoxImages>
+        </Content>
       </Section>
     </Container>
   )

@@ -23,7 +23,7 @@ export const TitleImage = styled('div', {
 })
 
 export const Box = styled('div', {
-  marginTop: '4rem',
+  margin: '4rem 0',
 
   display: 'flex',
   flexDirection: 'column',

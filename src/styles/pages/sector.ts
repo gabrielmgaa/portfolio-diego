@@ -1,9 +1,21 @@
 import Image from 'next/image'
 import { styled } from '..'
+import Link from 'next/link'
 
 export const Section = styled('section', {
   marginTop: '4rem',
+})
 
+export const Back = styled(Link, {
+  display: 'flex',
+  alignItems: 'center',
+  gap: '1rem',
+  color: '#000',
+
+  fontSize: '$md',
+})
+
+export const Content = styled('div', {
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'space-between',
@@ -25,7 +37,6 @@ export const Banner = styled(Image, {
   variants: {
     size: {
       column: {
-        maxWidth: '33rem',
         margin: 'auto',
       },
     },
@@ -34,7 +45,7 @@ export const Banner = styled(Image, {
 
 export const BoxImages = styled('div', {
   display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fit,minmax(24.5rem,1fr))',
+  gridTemplateColumns: 'repeat(auto-fit,minmax(23rem,1fr))',
   gridGap: '1rem',
   alignItems: 'center',
   justifyItems: 'center',
@@ -42,13 +53,13 @@ export const BoxImages = styled('div', {
   overflow: 'hidden',
   overflowY: 'auto',
 
-  maxWidth: '95rem',
+  maxWidth: '90rem',
   maxHeight: '60rem',
   padding: '0 1rem 3rem',
 
   img: {
     width: '100%',
-    height: '40rem',
+    height: '46rem',
     objectFit: 'cover',
   },
 })

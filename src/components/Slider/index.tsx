@@ -24,7 +24,7 @@ function SliderComponent() {
           spacing: 12,
         },
       },
-      '(max-width: 600px)': {
+      '(max-width: 560px)': {
         slides: {
           perView: 1,
         },
