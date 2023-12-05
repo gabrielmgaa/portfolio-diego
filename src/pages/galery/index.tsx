@@ -13,21 +13,34 @@ export default function Galery() {
       <Header />
 
       <Box size={{ '@bp3': 'md' }}>
-        <Sectores href="/galery/sector/manipulation" prefetch>
+        <Sectores href="/galery/sector/manipulation">
           <Image
             quality={100}
             src={manipulation}
             alt=""
             size={{ '@bp3': 'md' }}
+            priority
           />
           <span>Manipulação de Imagem</span>
         </Sectores>
         <Sectores href="/galery/sector/session">
-          <Image quality={100} src={session} alt="" size={{ '@bp3': 'md' }} />
+          <Image
+            quality={100}
+            src={session}
+            alt=""
+            size={{ '@bp3': 'md' }}
+            priority
+          />
           <span>Sessão de Fotos</span>
         </Sectores>
         <Sectores href="/galery/sector/street">
-          <Image quality={100} src={street} alt="" size={{ '@bp3': 'md' }} />
+          <Image
+            quality={100}
+            src={street}
+            alt=""
+            size={{ '@bp3': 'md' }}
+            priority
+          />
           <span>Fotografia Urbana</span>
         </Sectores>
       </Box>

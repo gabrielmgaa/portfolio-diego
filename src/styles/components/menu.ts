@@ -1,4 +1,4 @@
-import { keyframes, styled } from '@stitches/react'
+import { styled, keyframes } from '..'
 
 import * as Dialog from '@radix-ui/react-dialog'
 
@@ -31,7 +31,7 @@ export const Overlay = styled(Dialog.Overlay, {
 export const Content = styled(Dialog.Content, {
   display: 'flex',
   flexDirection: 'column',
-  fontFamily: 'Tirayuna',
+  fontFamily: '$tirayuna',
   zIndex: '2',
   overflowY: 'auto',
 

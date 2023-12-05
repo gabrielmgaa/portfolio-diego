@@ -25,6 +25,7 @@ import {
   sax,
   work,
 } from '@/assets/galery/street/index'
+import { ArrowLeft } from '@phosphor-icons/react'
 
 const images = [
   { id: 1, url: ball },
@@ -45,7 +46,10 @@ export default function Street() {
       <Header />
 
       <Section>
-        <Back href="/galery">Voltar</Back>
+        <Back href="/galery">
+          <ArrowLeft />
+          Voltar
+        </Back>
 
         <Content size={{ '@bp2': 'column' }}>
           <Banner src={street} alt="" size={{ '@bp2': 'column' }} />

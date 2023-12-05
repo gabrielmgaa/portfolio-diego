@@ -12,7 +12,7 @@ export const globalStyles = globalCss({
   },
 
   'body,input,textarea': {
-    fontFamily: 'Pradock Sans',
+    fontFamily: '$pradock',
     fontSize: '$sm',
   },
 
@@ -31,5 +31,10 @@ export const globalStyles = globalCss({
     html: {
       fontSize: '52%',
     },
+  },
+
+  '@font-face': {
+    fontFamily: 'Padrock Sans',
+    src: 'local("../../fonts/Pradock Regular.otf") format("otf")',
   },
 })

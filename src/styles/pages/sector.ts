@@ -37,6 +37,7 @@ export const Banner = styled(Image, {
   variants: {
     size: {
       column: {
+        maxWidth: '35rem',
         margin: 'auto',
       },
     },

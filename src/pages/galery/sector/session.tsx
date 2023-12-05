@@ -22,6 +22,7 @@ import {
   Content,
   Back,
 } from '@/styles/pages/sector'
+import { ArrowLeft } from '@phosphor-icons/react'
 
 const images = [
   { id: 1, url: casal },
@@ -39,7 +40,10 @@ export default function Manipulation() {
       <Header />
 
       <Section>
-        <Back href="/galery">Voltar</Back>
+        <Back href="/galery">
+          <ArrowLeft />
+          Voltar
+        </Back>
         <Content size={{ '@bp2': 'column' }}>
           <Banner src={session} alt="" size={{ '@bp2': 'column' }} priority />
 

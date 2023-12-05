@@ -41,7 +41,7 @@ export const Content = styled('div', {
   flexDirection: 'column',
   gap: '2rem',
   fontSize: '2rem',
-  fontWeight: '300',
+  fontWeight: '400',
   zIndex: '2',
   position: 'relative',
 

@@ -16,7 +16,6 @@ import {
   InstagramLogo,
   LinkedinLogo,
   List as PhosphorList,
-  WhatsappLogo,
 } from '@phosphor-icons/react'
 
 import * as Dialog from '@radix-ui/react-dialog'
