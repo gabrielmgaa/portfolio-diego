@@ -23,7 +23,7 @@ import {
   Content,
   Section,
 } from '@/styles/pages/sector'
-import { ArrowLeft } from '@phosphor-icons/react/dist/ssr'
+import { ArrowLeft } from '@phosphor-icons/react'
 
 const images = [
   { id: 1, url: barbie },
